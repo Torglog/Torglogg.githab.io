@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.ico">
+<script type="text/javascript" src="http://mvcreative.ru/example/6/2/snow.js"></script> 
+<script>
+     function change_color(obj)
+     {
+       obj.value && (document.body.style.backgroundColor = obj.value);
+       obj.src && (document.body.style.backgroundImage = 'url('+obj.src+')');
+     }
+  </script>  
+  <title>MARS</title>
+ </head>
+ 	  <div class="wrapper">
+<header>
+  <nav>
+    <div class="logo-box">
+      <h1 class="logo">
+        <a href="/">
+          <img src="img/sin.png" width="129" height="55 ">
+        </a>
+      </h1>
+    </div>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="1.html">Услуги</a></li>
+      <li><a href="2.html">Заявки</a></li>
+      <li><a href="3.html">Логистам</a></li>
+	  <li><a href="4.html">Контакты</a></li>
+   </ul>
+</nav>
+</header>
+<head>
+<meta charset="utf-8">
+<title>Всплывающее окно для сайта</title>
+<meta name="author" content="Viktor Klim">
+<meta name="copyright" content="Pixel.com" />
+<meta name="description" content="Всплывающее окно для сайта c помощью jQuery">
+<link rel="copyright" href="http://www.pixelcom.crimea.ua/vsplyvayushhee-okno-dlya-sajta.html">
+<link rel="stylesheet" href="css/jquery.modal.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.modal.min.js"></script>
+<script src="js/jquery.cookie.min.js"></script>
+</head>
+
+<body>
+<div id="opn-win" style="display:none;">
+  <form>
+    <input type="email" placeholder="Ваш электронный адрес...">
+    <input type="submit" value="Зарегестрироваться">
+  </form>
+</div>
+<script type="text/javascript">
+$(window).load(function() {
+  var hideTheModal = $.cookie('hideTheModal');
+  // если cookie не установлено...
+  if(hideTheModal == null){
+    // задержка 7 секунд
+    setTimeout(function(){
+    // вызвать модальное окно
+    $('#opn-win').modal();
+    }, 4000);
+    // когда кнопка "Закрыть" нажата
+    $('.close-modal').click(function(){
+    // добавить cookie
+    $.cookie('hideTheModal', 'true', { expires: 30 });
+    });
+  }
+});
+</script>
+<body> 
+	<div id="center"><h1 class="rey">Распределительный логистический центр MARS</h1></div>
+		<p class="pop"><b><i>MARS</i></b> - это компания предоставляющая услуги по транспортной и складской логистикой, а также помощь и переатистация штатных логистов.</p>
+    <p class="pop"></p>
+		<p class="pop">
+	</p>
+	<center><a rel="simplebox" href="img/635412933116763508.jpg"><img src="img/635412933116763508.jpg"  width="550" height="391"></a></center>
+<div id="center"><h2 class="rey">НАШИ ПРЕИМУЩЕСТВА</h2></div>
+		<hr>
+     <r class="ror"><li>Многолетний опыт работы на рынке</li></r>
+     <r class="ror"><li>Лицензия таможенного представителя</li></r>
+     <r class="ror"><li>Фокусировка на перевозке различного типа оборудования</li></r>
+     <r class="ror"><li>Возможность консолидации грузов в Европе</li></r>
+	 <r class="ror"><li>Наличие штата профессиональных инженеров</li></r>
+		</hr>
+<div id="center"><h2 class="rey">Наши клиенты</h2></div>
+		<hr>
+     <r class="ror"><li>Интернет магазин "BoxDom"</li></r>
+     <r class="ror"><li>Сеть супермаркетов "Avalon"</li></r>
+     <r class="ror"><li>Магазин спортивного инвентаря "Гермес"</li></r>
+     <r class="ror"><li>Магазин товаров для туризма "Икар"</li></r>
+		</hr>
+ <script type="text/javascript" src="simplebox_util.js"></script>
+<script type="text/javascript">
+(function(){
+var boxes=[],els,i,l;
+if(document.querySelectorAll){
+els=document.querySelectorAll('a[rel=simplebox]');  
+Box.getStyles('simplebox_css','simplebox.css');
+Box.getScripts('simplebox_js','simplebox.js',function(){
+simplebox.init();
+for(i=0,l=els.length;i<l;++i)
+simplebox.start(els[i]);
+simplebox.start('a[rel=simplebox_group]');      
+});
+}
+})();
+</script>
+  <style>
+   body {
+    background: url(http://www.kzavod-rostov.ru/sites/default/files/themepic/background.jpg) fixed ;
+    background-size: 100%;
+   }
+  </style>
+  <style type="text/css">
+  body, a:hover {
+  	cursor: url(http://cur.cursors-4u.net/cursors/cur-2/cur116.cur), 
+  	progress !important;}
+  </style>
+  <a href="http://www.cursors-4u.com/cursor/2008/12/17/cool-blue-outer-glow-pointer.html" target="_blank" title="Cool Blue Outer Glow Pointer"></a>
+</html>
